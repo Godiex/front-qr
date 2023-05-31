@@ -1,25 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './components/card/card.component';
-import {MatCardModule} from "@angular/material/card";
-import {MatGridListModule} from "@angular/material/grid-list";
-import { GridListComponent } from './components/grid-list/grid-list.component';
+import { MatCardModule } from "@angular/material/card";
 
 
 
 @NgModule({
     declarations: [
-        CardComponent,
-        GridListComponent
+        CardComponent
     ],
-  exports: [
-    CardComponent,
-    GridListComponent
-  ],
+    exports: [
+        CardComponent
+    ],
     imports: [
         CommonModule,
-        MatCardModule,
-        MatGridListModule
+        MatCardModule
     ]
 })
 export class SharedModule { }

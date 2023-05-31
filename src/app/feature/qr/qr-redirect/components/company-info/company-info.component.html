@@ -1,0 +1,19 @@
+<script src="../../../qr.module.ts"></script>
+<app-card>
+  <div class="container">
+    <div class="column">
+      <img class="image" [src]="infoRedirect.imageLinkInfo" alt="Descripción de la imagen">
+    </div>
+    <div class="column">
+      <div class="table-container">
+        <table>
+          <tr *ngFor="let item of getObjectEntries(infoRedirect.data)">
+            <th [ngStyle]="infoRedirect.stylesTemplate.th">{{item.key}}:</th>
+            <td>{{item.value}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</app-card>
+
