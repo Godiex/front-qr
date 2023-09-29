@@ -1,0 +1,46 @@
+
+
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    .image-container {
+        height: 600px;
+        width: 500px;
+    }
+}
+
+img {
+    width: 100%;
+    height: 600px;
+    object-fit:fill;
+    object-position: bottom;
+}
+
+img:hover{
+    opacity: 0.6;
+}
+
+.name-product{
+    text-align: center;
+    color: #de7c14;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.subtitle{
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+p{
+    margin: 0 0 15px;
+    text-align: left;
+}

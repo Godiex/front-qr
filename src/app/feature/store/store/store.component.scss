@@ -1,0 +1,23 @@
+.container-main-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .container-main-sections {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+}
+
+.logos-apps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
