@@ -1,97 +1,52 @@
-<div class="container-accordion" >
-    <mdb-accordion>
-        <mdb-accordion-item>
-          <ng-template mdbAccordionItemHeader class="title-center">Product Details</ng-template>
-          <ng-template mdbAccordionItemBody>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-            aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-            accusamus labore sustainable VHS.
-          </ng-template>
-        </mdb-accordion-item>
-      
-        <mdb-accordion-item>
-          <ng-template mdbAccordionItemHeader>Materials</ng-template>
-          <ng-template mdbAccordionItemBody>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-            aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-            accusamus labore sustainable VHS.
-          </ng-template>
-        </mdb-accordion-item>
-      
-        <mdb-accordion-item>
-          <ng-template mdbAccordionItemHeader>Take care of me</ng-template>
-          <ng-template mdbAccordionItemBody>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-            brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-            aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-            Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-            ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-            farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-            accusamus labore sustainable VHS.
-          </ng-template>
-        </mdb-accordion-item>
-        <mdb-accordion-item>
-            <ng-template mdbAccordionItemHeader>Where I came from</ng-template>
-            <ng-template mdbAccordionItemBody>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </ng-template>
-          </mdb-accordion-item>
-          <mdb-accordion-item>
-            <ng-template mdbAccordionItemHeader>Environmental Impact</ng-template>
-            <ng-template mdbAccordionItemBody>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </ng-template>
-          </mdb-accordion-item>
-          <mdb-accordion-item>
-            <ng-template mdbAccordionItemHeader>Circularity</ng-template>
-            <ng-template mdbAccordionItemBody>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </ng-template>
-          </mdb-accordion-item>
-          <mdb-accordion-item>
-            <ng-template mdbAccordionItemHeader>Compliance</ng-template>
-            <ng-template mdbAccordionItemBody>
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-              richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-              brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-              aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-              ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-              accusamus labore sustainable VHS.
-            </ng-template>
-          </mdb-accordion-item>
-      </mdb-accordion>
+<div class="container-accordion">
+  <mdb-accordion>
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader class="title-center">{{ 'productDetailsItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'productDetails' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+  
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'materialsItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'materials' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+  
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'careTextTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'careText' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'whereImFromItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'whereImFromText' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+    
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'environmentImpactItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'environmentImpactText' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+    
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'circularityItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'circularityText' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+
+    <mdb-accordion-item>
+      <ng-template mdbAccordionItemHeader>{{ 'complianceItemTitle' | translate }}</ng-template>
+      <ng-template mdbAccordionItemBody>
+        {{ 'complianceText' | translate }}
+      </ng-template>
+    </mdb-accordion-item>
+  </mdb-accordion>
 </div>

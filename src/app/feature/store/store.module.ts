@@ -7,6 +7,8 @@ import { DetailProductComponent } from './store/components/detail-product/detail
 import { RecommendationsComponent } from './store/components/recommendations/recommendations.component';
 import { InformationProductComponent } from './store/components/information-product/information-product.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
+import { LayoutModule } from 'src/app/layout/layout.module';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
   imports: [
     CommonModule,
     StoreRoutingModule,
-    MdbAccordionModule
+    MdbAccordionModule,
+    LayoutModule,
+    TranslateModule.forRoot(),
   ]
 })
 export class StoreModule { }
