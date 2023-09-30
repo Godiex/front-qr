@@ -1,52 +1,76 @@
 <div class="container-accordion">
-  <mdb-accordion>
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader class="title-center">{{ 'productDetailsItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'productDetails' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-  
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'materialsItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'materials' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-  
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'careTextTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'careText' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'whereImFromItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'whereImFromText' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-    
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'environmentImpactItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'environmentImpactText' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-    
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'circularityItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'circularityText' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-
-    <mdb-accordion-item>
-      <ng-template mdbAccordionItemHeader>{{ 'complianceItemTitle' | translate }}</ng-template>
-      <ng-template mdbAccordionItemBody>
-        {{ 'complianceText' | translate }}
-      </ng-template>
-    </mdb-accordion-item>
-  </mdb-accordion>
+  <div class="card flex justify-content-center">
+    <p-accordion class="w-full">
+      <p-accordionTab>
+        <ng-template pTemplate="header" >
+          <p class="customer-header">{{ 'productDetailsItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'productDetails' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header">{{ 'materialsItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'materials' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header"> {{ 'careTextTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'careText' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header"> {{ 'whereImFromItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'whereImFromText' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header">{{ 'environmentImpactItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'environmentImpactText' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header">{{ 'circularityItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'circularityText' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <p class="customer-header">{{ 'complianceItemTitle' | translate }}</p>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            {{ 'complianceText' | translate }}
+          </p>
+        </ng-template>
+      </p-accordionTab>
+    </p-accordion>
+  </div>
 </div>
