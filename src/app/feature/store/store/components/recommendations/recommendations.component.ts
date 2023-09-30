@@ -6,7 +6,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./recommendations.component.scss']
 })
 export class RecommendationsComponent {
-  @Input() productsMayAlsoLike = [{"photoUrl": ""}];
+  @Input() productsMayAlsoLike = [{"photoUrl": "", "id": 0}];
   @Output() eventChangeProduct: EventEmitter<number> = new EventEmitter();
 
   callFunctionChangeProduct(id: number) {

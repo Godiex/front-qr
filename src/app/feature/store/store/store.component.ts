@@ -27,8 +27,8 @@ export class StoreComponent {
     this.translationService.changeLanguage(language);
   }
 
-  changeProduct(id: any){
-    let product = reponseJson.find((product: any) => product.id === id);
+  changeProduct(id: number){
+    let product = reponseJson.find((product: any) => product.id == id);
     if (product) {
       this.setInfo(product);
     }

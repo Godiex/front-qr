@@ -1,12 +1,10 @@
-<app-header [logoUrl]="infoProduct.logoUrl" ></app-header>
+<app-header [logoUrl]="infoProduct.logoUrl" (eventChangeLanguaje)="changeLanguage($event)"></app-header>
 <div class="app-container margin-after-header">
   <div class="content">
-    <button (click)="changeLanguage('en')">English</button>
-    <button (click)="changeLanguage('es')">Español</button>
     <section>
         <div class="container-main-sections">
-            <app-detail-product [photos]="infoProduct.photos" (eventChangeProduct)="changeProduct($event)"></app-detail-product>
-            <app-recommendations [productsMayAlsoLike]="infoProduct.productsMayAlsoLike"></app-recommendations>
+            <app-detail-product [photos]="infoProduct.photos"></app-detail-product>
+            <app-recommendations [productsMayAlsoLike]="infoProduct.productsMayAlsoLike" (eventChangeProduct)="changeProduct($event)"></app-recommendations>
         </div>
         <app-information-product></app-information-product>
         <p class="text-center">Let's get Social!</p>

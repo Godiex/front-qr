@@ -15,7 +15,7 @@ export const item1 = {
     {
       "id": 2,
       "photoUrl": "https://i.ibb.co/nz9s1Gd/jeans-3.png"
-    }
+    },
   ],
   "customContent": [
     {
@@ -58,6 +58,27 @@ export const item1 = {
         "circularityText": "Our jacket is designed with sustainability and circularity in mind.",
         "complianceItemTitle": "Compliance",
         "complianceText": "We ensure compliance with all regulations and quality standards."
+      }
+    },
+    {
+      "languageCode": "ja",
+      "content": {
+        "productTitle": "ジャケット",
+        "authenticText": "これは本物のジャケットです。認証コード：GWB183_1294_0X001",
+        "productDetailsItemTitle": "製品の詳細",
+        "productDetails": "ここでは、ジャケットの詳細情報を英語で提供しています。",
+        "materialsItemTitle": "素材",
+        "materials": "このジャケットは耐久性と高品質の素材で作られています。",
+        "careTextTitle": "お手入れとメンテナンス",
+        "careText": "ジャケットを最良の状態で保つために、以下の指示に従ってください。",
+        "whereImFromItemTitle": "原産地",
+        "whereImFromText": "ジャケットの原産地とその歴史をご紹介します。",
+        "environmentImpactItemTitle": "環境への影響",
+        "environmentImpactText": "環境への影響を最小限に抑える方法について学びます。",
+        "circularityItemTitle": "循環型デザイン",
+        "circularityText": "当社のジャケットは持続可能性と循環型デザインを考慮して設計されています。",
+        "complianceItemTitle": "規制順守",
+        "complianceText": "すべての規制と品質基準を遵守することをお約束します。"
       }
     }
   ]
