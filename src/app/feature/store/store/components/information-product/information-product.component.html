@@ -2,7 +2,7 @@
   <div class="card flex justify-content-center">
     <p-accordion class="w-full">
       <p-accordionTab>
-        <ng-template pTemplate="header" >
+        <ng-template pTemplate="header">
           <p class="customer-header">{{ 'productDetailsItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
@@ -39,6 +39,10 @@
           <p class="m-0">
             {{ 'whereImFromText' | translate }}
           </p>
+          <div>
+            <google-map height="500px" width="100%" [style]="styleArray"></google-map>
+          </div>
+
         </ng-template>
       </p-accordionTab>
       <p-accordionTab>
@@ -49,6 +53,11 @@
           <p class="m-0">
             {{ 'environmentImpactText' | translate }}
           </p>
+          <div>
+            <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!"
+              [dataLabels]="chartOptions.dataLabels!" [plotOptions]="chartOptions.plotOptions!"
+              [xaxis]="chartOptions.xaxis!"></apx-chart>
+          </div>
         </ng-template>
       </p-accordionTab>
       <p-accordionTab>
