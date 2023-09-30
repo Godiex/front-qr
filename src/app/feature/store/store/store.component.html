@@ -5,7 +5,7 @@
     <button (click)="changeLanguage('es')">Español</button>
     <section>
         <div class="container-main-sections">
-            <app-detail-product [photos]="infoProduct.photos"></app-detail-product>
+            <app-detail-product [photos]="infoProduct.photos" (eventChangeProduct)="changeProduct($event)"></app-detail-product>
             <app-recommendations [productsMayAlsoLike]="infoProduct.productsMayAlsoLike"></app-recommendations>
         </div>
         <app-information-product></app-information-product>

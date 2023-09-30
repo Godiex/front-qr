@@ -1,8 +1,8 @@
 <article *ngIf="productsMayAlsoLike.length > 0" class="container-recommendations">
     <h2>You may also like</h2>
     <div class="recommendations-image">
-        <div *ngFor="let image of productsMayAlsoLike" class="image-container-recommendation">
-            <img src="assets/caio-coelho-NA9dtyWAFV4-unsplash.jpg" alt="">
+        <div *ngFor="let p of productsMayAlsoLike" class="image-container-recommendation">
+            <img [src]="p.photoUrl" alt="" onclick="callFunctionChangeProduct(p.id)">
         </div>
     </div>
 </article>
