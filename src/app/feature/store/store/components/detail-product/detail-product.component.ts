@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class DetailProductComponent {
   @Input() photos = [];
+  show: boolean = false;
+  toggleDropdown() {
+    this.show = !this.show;
+  }
 }
