@@ -8,5 +8,45 @@
 .title-center{
 
     text-align: center !important;
-    
+    padding: 0px !important;
 }
+
+.accordion-button{
+    text-align: center !important;
+   
+}
+
+.p-accordion-toggle-icon{
+    opacity: 0 !important;
+}
+
+:host ::ng-deep .p-accordion-tab-active {
+   background-color: #ebbe4d;
+
+   .customer-header{
+    color: white;
+   }
+   
+}
+
+:host ::ng-deep .p-accordion-header {
+    border: 1px solid #000;
+   
+ }
+ 
+
+:host ::ng-deep .p-accordion-header-link {
+   display: block;
+   width: 100%;
+   text-align: center;
+ }
+
+ :host ::ng-deep .p-accordion-toggle-icon {
+    display: none;
+  }
+
+
+
+
+
+

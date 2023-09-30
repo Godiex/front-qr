@@ -48,6 +48,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    BrowserAnimationsModule,
   ],
   providers:[],
   bootstrap: [AppComponent]

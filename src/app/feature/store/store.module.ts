@@ -10,7 +10,8 @@ import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { TranslateModule } from '@ngx-translate/core';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { HeaderComponent } from './store/components/header/header.component';
-
+import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
+import { AccordionModule } from 'primeng/accordion';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,8 @@ import { HeaderComponent } from './store/components/header/header.component';
     MdbAccordionModule,
     MdbCarouselModule,
     TranslateModule.forRoot(),
+    MdbCollapseModule,
+    AccordionModule
   ]
 })
 export class StoreModule { }
