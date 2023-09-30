@@ -12,4 +12,22 @@ nav {
   align-items: center;
 }
 
+.icon-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
 
+.pointer{
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
