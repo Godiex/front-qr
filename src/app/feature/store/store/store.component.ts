@@ -14,8 +14,9 @@ export class StoreComponent {
   constructor(private translationService: TranslationService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.setInfo(item1);
-    console.log(this.route.snapshot.paramMap.get('id'));
+    let id = this.route.snapshot.paramMap.get('id');
+    let product = reponseJson.find((product: any) => product.id == id);
+    this.setInfo(product);
   }
 
   private setInfo(product: any) {

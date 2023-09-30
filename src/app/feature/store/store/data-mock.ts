@@ -24,7 +24,7 @@ export const item1 = {
         "productTitle": "Chaqueta",
         "authenticText": "Esta es una chaqueta auténtica. \n\nCódigo de autenticación: \n\nGWB183_1294_0X001\n",
         "productDetailsItemTitle": "Detalles del Producto",
-        "youMayAlsoLikeTitle": "",
+        "youMayAlsoLikeTitle": "Cosas que quizas buscas",
         "productDetails": "Aquí encontrarás información detallada sobre nuestra chaqueta en tu idioma español.",
         "materialsItemTitle": "Materiales",
         "materials": "Esta chaqueta está hecha de materiales resistentes y de alta calidad.",
@@ -37,7 +37,8 @@ export const item1 = {
         "circularityItemTitle": "Circularidad",
         "circularityText": "Nuestra chaqueta está diseñada pensando en la sostenibilidad y la circularidad.",
         "complianceItemTitle": "Cumplimiento",
-        "complianceText": "Nos aseguramos de cumplir con todas las normativas y estándares de calidad."
+        "complianceText": "Nos aseguramos de cumplir con todas las normativas y estándares de calidad.",
+        "letsGetSocial": "vive la vida social"
       }
     },
     {
@@ -46,6 +47,7 @@ export const item1 = {
         "productTitle": "Jacket",
         "authenticText": "This is an authentic jacket. Authentication code: GWB183_1294_0X001",
         "productDetailsItemTitle": "Product Details",
+        "youMayAlsoLikeTitle": "You also may like",
         "productDetails": "Here you'll find detailed information about our jacket in your English language.",
         "materialsItemTitle": "Materials",
         "materials": "This jacket is made from durable and high-quality materials.",
@@ -58,7 +60,8 @@ export const item1 = {
         "circularityItemTitle": "Circularity",
         "circularityText": "Our jacket is designed with sustainability and circularity in mind.",
         "complianceItemTitle": "Compliance",
-        "complianceText": "We ensure compliance with all regulations and quality standards."
+        "complianceText": "We ensure compliance with all regulations and quality standards.",
+        "letsGetSocial": "Lets get social"
       }
     },
     {
@@ -67,6 +70,7 @@ export const item1 = {
         "productTitle": "ジャケット",
         "authenticText": "これは本物のジャケットです。認証コード：GWB183_1294_0X001",
         "productDetailsItemTitle": "製品の詳細",
+        "youMayAlsoLikeTitle": "おすすめ",
         "productDetails": "ここでは、ジャケットの詳細情報を英語で提供しています。",
         "materialsItemTitle": "素材",
         "materials": "このジャケットは耐久性と高品質の素材で作られています。",
@@ -79,7 +83,8 @@ export const item1 = {
         "circularityItemTitle": "循環型デザイン",
         "circularityText": "当社のジャケットは持続可能性と循環型デザインを考慮して設計されています。",
         "complianceItemTitle": "規制順守",
-        "complianceText": "すべての規制と品質基準を遵守することをお約束します。"
+        "complianceText": "すべての規制と品質基準を遵守することをお約束します。",
+        "letsGetSocial": "ソーシャルに参加しましょう"
       }
     }
   ]
