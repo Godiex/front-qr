@@ -24,6 +24,7 @@ export const item1 = {
         "productTitle": "Chaqueta",
         "authenticText": "Esta es una chaqueta auténtica. \n\nCódigo de autenticación: \n\nGWB183_1294_0X001\n",
         "productDetailsItemTitle": "Detalles del Producto",
+        "youMayAlsoLikeTitle": "",
         "productDetails": "Aquí encontrarás información detallada sobre nuestra chaqueta en tu idioma español.",
         "materialsItemTitle": "Materiales",
         "materials": "Esta chaqueta está hecha de materiales resistentes y de alta calidad.",
