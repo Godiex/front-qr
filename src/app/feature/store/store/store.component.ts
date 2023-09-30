@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslationService } from './shared/service/translate.service';
-import { translationsJson } from './data-mock';
-import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute } from '@angular/router';
+import { item1 } from './data-mock';
 
 @Component({
   selector: 'app-store',
@@ -11,9 +10,12 @@ import { ActivatedRoute } from '@angular/router';
   providers: [TranslationService]
 })
 export class StoreComponent {
+  infoProduct: any;
   constructor(private translationService: TranslationService, private route: ActivatedRoute) {}
+
   ngOnInit() {
-    this.translationService.loadTranslations(translationsJson);
+    this.translationService.loadTranslations(item1.customContent);
+    this.infoProduct = item1;
     console.log(this.route.snapshot.paramMap.get('id'));
   }
 

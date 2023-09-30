@@ -10,8 +10,8 @@ export class TranslationService {
   loadTranslations(translations: any) {
     this.translations = translations;
     const lang = this.translate.currentLang || 'es';
-    if (translations.languages && Array.isArray(translations.languages)) {
-      const languageData = translations.languages.find((language: any) => language.languageCode === lang);
+    if (translations && Array.isArray(translations)) {
+      const languageData = translations.find((language: any) => language.languageCode === lang);
       if (languageData && languageData.content) {
         this.translate.setTranslation(lang, languageData.content);
         this.translate.use(lang);
@@ -24,7 +24,7 @@ export class TranslationService {
   }
 
   changeLanguage(lang: string) {
-    const languageData = this.translations.languages.find((language: any) => language.languageCode === lang);
+    const languageData = this.translations.find((language: any) => language.languageCode === lang);
       if (languageData && languageData.content) {
         this.translate.setTranslation(lang, languageData.content);
         this.translate.use(lang);

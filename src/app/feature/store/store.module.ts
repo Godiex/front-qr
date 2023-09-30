@@ -7,8 +7,9 @@ import { DetailProductComponent } from './store/components/detail-product/detail
 import { RecommendationsComponent } from './store/components/recommendations/recommendations.component';
 import { InformationProductComponent } from './store/components/information-product/information-product.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
-import { LayoutModule } from 'src/app/layout/layout.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { HeaderComponent } from './store/components/header/header.component';
 
 
 @NgModule({
@@ -16,13 +17,14 @@ import { TranslateModule } from '@ngx-translate/core';
     StoreComponent,
     DetailProductComponent,
     RecommendationsComponent,
-    InformationProductComponent
+    InformationProductComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
     StoreRoutingModule,
     MdbAccordionModule,
-    LayoutModule,
+    MdbCarouselModule,
     TranslateModule.forRoot(),
   ]
 })
