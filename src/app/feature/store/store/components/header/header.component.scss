@@ -1,3 +1,13 @@
+/* Cambia el color del relleno del SVG a azul */
+.navbar-brand2 .icon-img {
+  fill: blue;
+}
+
+/* Cambia el color de borde del SVG a rojo */
+.navbar-brand2 .icon-img {
+  stroke: red;
+}
+
 .header {
   top: 0;
   left: 0;

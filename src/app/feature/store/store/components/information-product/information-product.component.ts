@@ -22,7 +22,27 @@ export type ChartOptions = {
   styleUrls: ['./information-product.component.scss']
 })
 export class InformationProductComponent {
-
+  center: google.maps.LatLngLiteral = { lat: 51.678418, lng: 7.809007 };
+  options: google.maps.MapOptions = {
+    zoomControl: false,
+    disableDoubleClickZoom: true,
+    maxZoom: 15,
+    minZoom: 8,
+    disableDefaultUI: true,
+    gestureHandling: 'greedy',
+    backgroundColor: 'transparent',
+    styles: [
+      {
+        featureType: 'water', // Tipo de característica (puede ser 'water', 'road', 'landscape', etc.)
+        elementType: 'geometry', // Tipo de elemento (puede ser 'geometry', 'labels', 'all', etc.)
+        stylers: [
+          { color: '#000000' }, // Cambia el color del agua a negro
+          { visibility: 'simplified' }, // Simplifica la visibilidad del elemento
+        ]
+      },
+      // Puedes agregar más objetos para aplicar reglas de estilo adicionales
+    ]
+  };
   public chartOptions: Partial<ChartOptions> = {
     series: [
       {
@@ -58,8 +78,11 @@ export class InformationProductComponent {
     }
   } ;
   @ViewChild("chart") chart!: ChartComponent;
+  "stylers": [
+    { "color": "#000000" }
+  ]
 
-  styleArray = [ //any style array defined in the google documentation you linked
+  styleArray = [
     {
       featureType: "all",
       stylers: [
