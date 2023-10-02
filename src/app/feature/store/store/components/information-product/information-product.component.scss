@@ -10,7 +10,6 @@
 
 .accordion-button{
     text-align: center !important;
-
 }
 
 .p-accordion-toggle-icon{
@@ -18,15 +17,15 @@
 }
 
 :host ::ng-deep .p-accordion-tab-active {
-   background-color: #ebbe4d;
+   background-color: #4d67eb;
    .customer-header{
     color: white;
    }
-
+  white-space: pre-line;
 }
 
 :host ::ng-deep .p-accordion-header {
-    border: 1px solid #878787;
+    border: 0.5px solid #878787;
  }
 
 
@@ -34,7 +33,7 @@
    display: block;
    width: 100%;
    height: 10px;
-   line-height: 0px;
+   line-height: 0;
    text-align: center;
  }
 

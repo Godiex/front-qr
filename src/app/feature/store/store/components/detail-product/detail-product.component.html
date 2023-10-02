@@ -3,9 +3,7 @@
         <div class="image-container">
 
             <mdb-carousel [dark]="true" [indicators]="false" [animation]="'fade'">
-
                 <mdb-carousel-item *ngFor="let image of photos">
-
                     <div class="dropdown ">
                         <img src="assets/compartir.png" alt="share" class="shareIcon" (click)="toggleDropdown()">
                         <ul *ngIf="show" class="dropdown-menu dropdown-active" aria-labelledby="dropdownMenuButton">

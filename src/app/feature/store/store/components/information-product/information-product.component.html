@@ -40,7 +40,9 @@
             {{ 'whereImFromText' | translate }}
           </p>
           <div>
-            <google-map height="500px" width="100%" [options]="options"  [style]="stylers"></google-map>
+            <google-map height="500px" width="100%" [options]="options"  [style]="stylers">
+              <map-marker [position]="marker.position"></map-marker>
+            </google-map>
           </div>
 
         </ng-template>

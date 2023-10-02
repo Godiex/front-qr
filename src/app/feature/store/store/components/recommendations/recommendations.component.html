@@ -1,8 +1,8 @@
 <article *ngIf="productsMayAlsoLike.length > 0" class="container-recommendations">
-    <h2>{{ 'youMayAlsoLikeTitle' | translate }}</h2>
-    <div class="recommendations-image">
-        <div *ngFor="let p of productsMayAlsoLike" class="image-container-recommendation">
-            <img [src]="p.photoUrl" alt="" (click)="callFunctionChangeProduct(p.id)">
-        </div>
+  <h2>{{ 'youMayAlsoLikeTitle' | translate }}</h2>
+  <div class="recommendations-image">
+    <div *ngFor="let p of productsMayAlsoLike" class="image-container-recommendation">
+      <img [src]="p.photoUrl" alt="" (click)="callFunctionChangeProduct(p.id)">
     </div>
+  </div>
 </article>

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {
   ApexAxisChartSeries,
   ApexChart,
@@ -22,7 +22,10 @@ export type ChartOptions = {
   styleUrls: ['./information-product.component.scss']
 })
 export class InformationProductComponent {
-  center: google.maps.LatLngLiteral = { lat: 51.678418, lng: 7.809007 };
+  marker = {
+    position: { lat: 35.682839, lng: 139.759455  },
+  }
+  center: google.maps.LatLngLiteral = { lat: 35.682839, lng: 139.759455 };
   options: google.maps.MapOptions = {
     zoomControl: false,
     disableDoubleClickZoom: true,
@@ -31,23 +34,37 @@ export class InformationProductComponent {
     disableDefaultUI: true,
     gestureHandling: 'greedy',
     backgroundColor: 'transparent',
+    center: { lat: 35.682839, lng: 139.759455  },
+    zoom: 12,
     styles: [
       {
-        featureType: 'water', // Tipo de característica (puede ser 'water', 'road', 'landscape', etc.)
-        elementType: 'geometry', // Tipo de elemento (puede ser 'geometry', 'labels', 'all', etc.)
+        featureType: "all",
         stylers: [
-          { color: '#000000' }, // Cambia el color del agua a negro
-          { visibility: 'simplified' }, // Simplifica la visibilidad del elemento
+          { saturation: -80 }
         ]
-      },
-      // Puedes agregar más objetos para aplicar reglas de estilo adicionales
+      }, {
+        featureType: "road.arterial",
+        elementType: "geometry",
+        stylers: [
+          { hue: "#6f6f6f" },
+          { saturation: 50 }
+        ]
+      }, {
+        featureType: "poi.business",
+        elementType: "labels",
+        stylers: [
+          { visibility: "off" }
+        ]
+      }
     ]
   };
+
   public chartOptions: Partial<ChartOptions> = {
     series: [
       {
         name: "basic",
-        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+        data: [400, 430, 448, 800, 540, 580, 690, 1100, 1200, 1380],
+        color: "#6f6f6f"
       }
     ],
     chart: {
@@ -81,30 +98,5 @@ export class InformationProductComponent {
   "stylers": [
     { "color": "#000000" }
   ]
-
-  styleArray = [
-    {
-      featureType: "all",
-      stylers: [
-        { saturation: -80 }
-      ]
-    }, {
-      featureType: "road.arterial",
-      elementType: "geometry",
-      stylers: [
-        { hue: "#00ffee" },
-        { saturation: 50 }
-      ]
-    }, {
-      featureType: "poi.business",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
-
   constructor(){ }
-
-
 }
