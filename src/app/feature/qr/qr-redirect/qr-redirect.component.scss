@@ -25,6 +25,11 @@ p{
   width: 30%;
 }
 
+.small-logo {
+  max-width: 80px; /* Establece el ancho máximo que deseas */
+  height: auto; /* Mantiene la relación de aspecto original */
+}
+
 nav {
   float: left;
   display: flex;

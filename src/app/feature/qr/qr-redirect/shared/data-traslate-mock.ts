@@ -3,6 +3,7 @@ export  const data = [
     "languageCode": "es",
     "content": {
       "titleText": "Proceso de produccion",
+      "textButton": "Click para ver",
       "text": "Este fascinante viaje nos sumergirá en el proceso de creación de una prenda de vestir icónica: la camisa casual, todos los pasos que verán a continuación describen brevemente los procesos, desde la obtención de la materia prima hasta la producción del producto final que nuestros clientes pueden adquirir.",
       "aboutText": "Acerca de",
       "productText": "Productos",
@@ -42,6 +43,7 @@ export  const data = [
     "languageCode": "en",
     "content": {
       "aboutText": "About US",
+      "textButton": "Click to see",
       "productText": "Products",
       "titleText": "Production Process",
       "text": "This fascinating journey will immerse us in the process of creating an iconic piece of clothing: the casual shirt. All the steps you will see below briefly describe the processes, from obtaining the raw materials to the production of the final product that our customers can purchase.",
@@ -80,6 +82,7 @@ export  const data = [
   {
     "languageCode": "ja",
     "content": {
+      "textButton": "クリックしてご覧ください",
       "aboutText": "会社について",
       "productText": "製品",
       "titleText": "生産プロセス (せいさんぷろせす)",
