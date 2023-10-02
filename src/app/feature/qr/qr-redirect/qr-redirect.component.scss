@@ -1,1 +1,167 @@
+/* Estilos para el header */
+.header {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
 
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  display: flex;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-button {
+  display: none;
+}
+
+.menu-button label {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-button input[type="checkbox"] {
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.left-nav {
+  display: flex;
+  margin-right: 10px;
+}
+
+.online-store {
+  border-right: 1px solid black;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.search-button button {
+  border: none;
+  background-color: transparent;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para la tarjeta */
+.card {
+  width: 80%;
+  max-width: 1440px;
+  height: auto;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: beige;
+  display: flex;
+  flex-direction: row; /* Cambiado para que la imagen esté a la izquierda */
+}
+
+.card-img {
+  width: 20.33%;
+  padding: 0; /* Añadido padding para reducir espacio */
+}
+
+.card-img img {
+  max-width: 100%; /* Añadido para que la imagen sea responsiva */
+  height: 300px; /* Añadido para que la imagen sea responsiva */
+  float: left; /* Cambiado para que la imagen esté a la izquierda */
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 1rem 0rem 4rem; /* Ajustado el padding para reducir espacio */
+  position: relative;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-number {
+  font-size: 60px; /* Ajustado el tamaño del número */
+  position: absolute;
+  top: -10px; /* Posicionado en la esquina superior derecha */
+  right: 10px; /* Posicionado en la esquina superior derecha */
+  color: burlywood;
+  font-style: normal;
+  font-family: "Gidole", sans-serif;
+  letter-spacing: -0.07em;
+  word-wrap: break-word;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #bfa84a;
+  margin-top: 1rem;
+}
+
+.card-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  height: calc(100% - 10px);
+}
+
+.card-button {
+  display: flex;
+  position: absolute;
+  bottom: 10px; /* Posicionado en la esquina inferior derecha */
+  right: 10px; /* Posicionado en la esquina inferior derecha */
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.card-button span {
+  margin-left: 10px;
+}

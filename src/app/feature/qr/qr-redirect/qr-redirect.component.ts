@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {QrRedirectService} from "./shared/service/qr-redirect.service";
 import {QrRedirectInfo} from "./shared/interfaces/qr-redirect-info";
 
@@ -8,24 +8,34 @@ import {QrRedirectInfo} from "./shared/interfaces/qr-redirect-info";
   styleUrls: ['./qr-redirect.component.scss'],
   providers: [QrRedirectService]
 })
-export class QrRedirectComponent implements OnInit{
-  infoRedirect: QrRedirectInfo;
-  baseStyles: any;
+export class QrRedirectComponent{
+  constructor()  {}
 
-  constructor(private readonly qrRedirectService: QrRedirectService) {
-    this.infoRedirect = {
-      stylesTemplate: { h2: { property : 'custom-property'}, th: { property : 'custom-property'} },
-      data: { key: 'value' },
-    } as QrRedirectInfo;
-    this.baseStyles = {};
+  currentLanguage: number = 0;
+
+  flags: Array<any> = [{
+    language: 'spanish',
+    code: 'es',
+    image: 'assets/colombia-icon.png'
+  }, {
+    language: 'english',
+    code: 'en',
+    image: 'assets/estados-unidos.png'
+  }, {
+    language: 'Japanese',
+    code: 'ja',
+    image: 'assets/japon.png'
+  }];
+
+  getCurrentLanguage() {
+    return this.flags[this.currentLanguage].image
   }
 
-   ngOnInit(): void {
-    this.qrRedirectService.apiGetDataQr("123").subscribe(data => {
-      this.baseStyles = data.stylesTemplate;
-      this.infoRedirect = data;
-      debugger
-    });
+  changeLanguage() {
+    if (this.currentLanguage === (this.flags.length - 1)) {
+      this.currentLanguage = 0;
+    } else {
+      this.currentLanguage++;
+    }
   }
-
 }
