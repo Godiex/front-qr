@@ -1,5 +1,14 @@
-/* Estilos para el header */
+p{
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1em;
+  line-height: 160%;
+}
 .header {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1em;
+  line-height: 160%;
   background-color: #fff;
   color: #000;
   text-align: center;
@@ -7,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Arial, sans-serif;
 }
 
 .logo {
@@ -81,6 +89,9 @@ a {
 
 /* Estilos para la tarjeta */
 .card {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1em;
+  line-height: 160%;
   width: 80%;
   max-width: 1440px;
   height: auto;
@@ -94,7 +105,7 @@ a {
 }
 
 .card-img {
-  width: 20.33%;
+  width: 28.33%;
   padding: 0; /* Añadido padding para reducir espacio */
 }
 
@@ -116,34 +127,66 @@ a {
 }
 
 .card-title {
+  font-family: Montserrat, sans-serif;
+  line-height: 160%;
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
 .card-number {
-  font-size: 60px; /* Ajustado el tamaño del número */
+  font-size: 80px; /* Ajustado el tamaño del número */
   position: absolute;
   top: -10px; /* Posicionado en la esquina superior derecha */
   right: 10px; /* Posicionado en la esquina superior derecha */
-  color: burlywood;
+  color: #e03a5059;
   font-style: normal;
-  font-family: "Gidole", sans-serif;
+  font-family: Montserrat, sans-serif;
   letter-spacing: -0.07em;
   word-wrap: break-word;
+  line-height: 160%;
 }
 
 .card-subtitle {
   font-size: 18px;
-  color: #bfa84a;
+  color: #d6001c;
   margin-top: 1rem;
 }
 
 .card-description {
+  font-family: Montserrat, sans-serif;
   margin-top: 10px;
   font-size: 16px;
   color: #555;
   height: calc(100% - 10px);
+  white-space: pre-line;
+}
+
+.centered-container {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centered-container .content {
+  font-size: 16px; /* Ejemplo: Tamaño de fuente para el contenido */
+  color: #333;
+}
+
+.content h1 {
+  font-family: Montserrat, sans-serif;
+  line-height: 160%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.content p {
+  font-family: Montserrat, sans-serif;
+  line-height: 160%;
+  font-size: 15px;
+  font-weight: lighter;
+  color: #333;
 }
 
 .card-button {
@@ -151,7 +194,7 @@ a {
   position: absolute;
   bottom: 10px; /* Posicionado en la esquina inferior derecha */
   right: 10px; /* Posicionado en la esquina inferior derecha */
-  width: 200px;
+  width: 210px;
   background-color: #333;
   color: #fff;
   padding: 10px 20px;

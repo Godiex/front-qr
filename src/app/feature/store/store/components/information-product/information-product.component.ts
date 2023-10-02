@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
 import {
   ApexAxisChartSeries,
   ApexChart,
@@ -21,11 +21,12 @@ export type ChartOptions = {
   templateUrl: './information-product.component.html',
   styleUrls: ['./information-product.component.scss']
 })
-export class InformationProductComponent {
+export class InformationProductComponent implements OnChanges{
+  @Input() position = { lat: 35.682839, lng: 139.759455  };
   marker = {
-    position: { lat: 35.682839, lng: 139.759455  },
+    position: this.position,
   }
-  center: google.maps.LatLngLiteral = { lat: 35.682839, lng: 139.759455 };
+  center: google.maps.LatLngLiteral = this.position;
   options: google.maps.MapOptions = {
     zoomControl: false,
     disableDoubleClickZoom: true,
@@ -34,7 +35,7 @@ export class InformationProductComponent {
     disableDefaultUI: true,
     gestureHandling: 'greedy',
     backgroundColor: 'transparent',
-    center: { lat: 35.682839, lng: 139.759455  },
+    center: this.position,
     zoom: 12,
     styles: [
       {
@@ -58,7 +59,6 @@ export class InformationProductComponent {
       }
     ]
   };
-
   public chartOptions: Partial<ChartOptions> = {
     series: [
       {
@@ -99,4 +99,16 @@ export class InformationProductComponent {
     { "color": "#000000" }
   ]
   constructor(){ }
+
+  ngOnChanges(changes: SimpleChanges) {
+    // Detecta cambios en la propiedad 'position'
+    if (changes["position"] && changes["position"].currentValue) {
+      // Actualiza 'marker' y 'center' con el nuevo valor de 'position'
+      this.marker = {
+        position: this.position,
+      }
+      this.options.center = this.position;
+      this.center = this.position;
+    }
+  }
 }

@@ -7,6 +7,7 @@ import { CompanyTitleComponent } from './qr-redirect/components/company-title/co
 import { CompanyInfoComponent } from './qr-redirect/components/company-info/company-info.component';
 import { SharedModule } from "../../shared/shared.module";
 import { SocialNetworksButtonComponent } from './qr-redirect/components/social-networks-button/social-networks-button.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SocialNetworksButtonComponent } from './qr-redirect/components/social-n
   imports: [
     CommonModule,
     QrRoutingModule,
-    SharedModule
+    SharedModule,
+    TranslateModule
   ]
 })
 export class QrModule { }

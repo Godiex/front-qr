@@ -2,6 +2,7 @@
 export const product1 = {
   "id": 1,
   "logoUrl": "https://i.ibb.co/mcDzV9g/LOGO-TOGO.jpg",
+  "position": { lat: 10.968540, lng: -74.781319  },
   "photos": [
     "https://i.ibb.co/8YZsbWm/CAMISA-1.jpg",
     "https://i.ibb.co/z27qDFS/CAMISA-2.webp",
@@ -88,6 +89,7 @@ export const product1 = {
 export const product2= {
   "id": 2,
   "logoUrl": "https://i.ibb.co/mcDzV9g/LOGO-TOGO.jpg",
+  "position": { lat: 35.682839, lng: 139.759455  },
   "photos": [
     "https://i.ibb.co/r2yBwHq/JENAS1.jpg",
     "https://i.ibb.co/KGyFYG4/jeans-1.png",
@@ -135,24 +137,24 @@ export const product2= {
     {
       "languageCode": "en",
       "content": {
-        "productTitle": "Jacket",
-        "authenticText": "This is an authentic jacket. \nAuthentication Code: \nGWB183_1294_0X003\n",
+        "productTitle": "JEANS",
+        "authenticText": "This is authentic jeans. \nAuthentication code: \nGWB183_1294_0X002\n",
         "productDetailsItemTitle": "Product Details",
         "youMayAlsoLikeTitle": "Things You Might Like",
-        "productDetails": "Description: Solid color high-neck quilted jacket with front pockets. A must-have essential to pair with all your outfits on cold and rainy days. \n\nAvailable Colors: Black, Blue, Gray\n\nSizes: XS, S, M, L, XL",
+        "productDetails": "Description: Classic straight-cut jeans. Modern and versatile design. \n\nAvailable Colors: Dark Blue, Black, Gray \n\nSizes: 28-40",
         "materialsItemTitle": "Materials",
-        "materials": "Material: 100% polyester. Lining: 100% polyester.\nComposition: Durable fabric with a warm lining.\nDurability: Long-lasting design.",
+        "materials": "Material: 98% cotton, 2% elastane. \nComposition: Resilient and stretchy fabric. \nDurability: Reinforced seams.",
         "careTextTitle": "Care and Maintenance",
-        "careText": "Care and Maintenance\nMachine wash in cold water. Do not use bleach. Dry at low temperature. Do not dry clean. Do not scrub with a brush. Do not remove stains with a solvent. Do not soak. Do not wring or squeeze.",
+        "careText": "Care and Maintenance \nMaterial: 98% cotton, 2% elastane. \nComposition: Resilient and stretchy fabric. \nDurability: Durable design.",
         "whereImFromItemTitle": "Origin",
-        "whereImFromText": "Discover where our jacket comes from and its history.",
+        "whereImFromText": "Discover where our jeans come from and their history.",
         "environmentImpactItemTitle": "Environmental Impact",
-        "environmentImpactText": "This product’s materials show the following reductions in impact when compared to regular versions of the same materials",
+        "environmentImpactText": "When this garment reaches the end of its useful life, it doesn't have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of it safely in your local waste management system. This item will not release any harmful substances into the environment and will emit no greenhouse gases.",
         "circularityItemTitle": "Circularity",
-        "circularityText": "When this garment reaches the end of its useful life, it doesn’t have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of safely in your local waste management system. This item will not release any harmful substances into the environment and will release no greenhouse gases.",
+        "circularityText": "When this garment reaches the end of its useful life, it doesn't have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of it safely in your local waste management system. This item will not release any harmful substances into the environment and will emit no greenhouse gases.",
         "complianceItemTitle": "Compliance",
-        "complianceText": "Jacket made with 100% polyester and 100% polyester lining. Meets quality and sustainability standards. No harmful chemicals are used in its production.",
-        "letsGetSocial": "Let's get social"
+        "complianceText": "Jeans made with 98% cotton and 2% elastane. Compliant with quality and sustainability standards. No harmful chemicals are used in their production.",
+        "letsGetSocial": "Let's Get Social"
       }
     },
     {
@@ -184,6 +186,7 @@ export const product2= {
 export const product3= {
   "id": 3,
   "logoUrl": "https://i.ibb.co/mcDzV9g/LOGO-TOGO.jpg",
+  "position": { lat: 39.8283, lng: 98.5795  },
   "photos": [
     "https://i.ibb.co/DCKxxKB/CHAQUETA-1.jpg",
     "https://i.ibb.co/ThW6H9r/CHAQUETA-2.jpg",
@@ -281,6 +284,7 @@ export const product3= {
 export const product4= {
   "id": 4,
   "logoUrl": "https://i.ibb.co/mcDzV9g/LOGO-TOGO.jpg",
+  "position": { lat: 35.682839, lng: 139.759455  },
   "photos": [
     "https://i.ibb.co/KNrTnMC/deportiva-1.png",
     "https://i.ibb.co/k2nK6qQ/deportiva-2.png",
