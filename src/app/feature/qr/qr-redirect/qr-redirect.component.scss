@@ -102,6 +102,14 @@ a {
   background-color: beige;
   display: flex;
   flex-direction: row; /* Cambiado para que la imagen esté a la izquierda */
+  opacity: 0; /* Tarjetas inicialmente invisibles */
+  transform: translateY(50px); /* Desplazar hacia abajo */
+  transition: opacity 1s ease, transform 0.5s ease; /* Transición suave */
+}
+
+.visible {
+  opacity: 1; /* Tarjetas visibles al 100% */
+  transform: translateY(0); /* Sin desplazamiento */
 }
 
 .card-img {
