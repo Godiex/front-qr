@@ -27,6 +27,13 @@ svg {
     margin-bottom: 14px;
 }
 
+@media screen and (max-width: 230px) {
+  svg {
+    width: 20px;
+    fill: #07446d;
+  }
+}
+
 .app-container {
     display: flex;
     flex-direction: column;

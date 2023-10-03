@@ -35,11 +35,17 @@ nav {
 }
 
 @media (max-width: 767.98px) {
-
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .icon-img {
+    width: 30px;
+    height: 30px;
   }
 }

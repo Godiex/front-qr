@@ -34,7 +34,7 @@ export const product1 = {
         "circularityText": "Cuando esta prenda llega al final de su vida útil no tiene que ir a un vertedero. Hay muchas maneras para alargar la vida de la prenda o transformarla en algo nuevo. Deseche de forma segura en la basura local sistema de gestión. Este artículo no liberará ninguna sustancia nociva. al medio ambiente y no liberará gases de efecto invernadero. gases.",
         "complianceItemTitle": "Cumplimiento",
         "complianceText": "CHAMBRAY ORGÁNICO HECHO CON 70% ORGÁNICO ALGODÓN Y 30% ALGODÓN PROCEDENTE DE FUENTES RECICLADAS.\n\n• Producido a partir de algodón orgánico estadounidense que es sin productos químicos tóxicos ni OGM (genéticamente organismos modificados) \n\n• Teñido con pigmentos especiales libres de peligrosos. quimicos",
-        "letsGetSocial": "Seamos sociales"
+        "letsGetSocial": "Redes Sociales"
       }
     },
     {
@@ -80,7 +80,7 @@ export const product1 = {
         "circularityText": "この衣服が耐用年数の終わりに達すると、埋め立て地に行く必要はありません。たくさんの方法があります衣服の寿命を延ばす、または衣服を次のように変えるため 新しい何か。地元 廃棄物として安全に廃棄してください マネジメントシステム。この商品は有害物質を放出しません 環境中に排出され、温室効果を放出しません ガス",
         "complianceItemTitle": "規制順守",
         "complianceText": "70％オーガニックで作られたオーガニックシャンブレー コットンおよびリサイクル資源からのコットン 30%。\n\n• アメリカのオーガニックコットンから作られています。有毒化学物質や遺伝子組み換え作物（遺伝子組み換え作物）を使用せずに栽培されています。改変生物）\n\n• 有害物質を含まない特殊な顔料で染色されています。化学薬品",
-        "letsGetSocial": "ソーシャルに参加しましょう"
+        "letsGetSocial": "ソーシャルネットワーク"
       }
     }
   ]
@@ -131,7 +131,7 @@ export const product2= {
         "circularityText": "Cuando esta prenda llega al final de su vida útil no tiene que ir a un vertedero. Hay muchas maneras para alargar la vida de la prenda o transformarla en algo nuevo. Deseche de forma segura en la basura local sistema de gestión. Este artículo no liberará ninguna sustancia nociva al medio ambiente y no liberará gases de efecto invernadero.",
         "complianceItemTitle": "Cumplimiento",
         "complianceText": "Jeans fabricados con un 98% de algodón y un 2% de elastano. Cumplen con los estándares de calidad y sostenibilidad. No se utilizan productos químicos dañinos en su producción.",
-        "letsGetSocial": "Seamos sociales"
+        "letsGetSocial": "Redes sociales"
       }
     },
     {
@@ -154,7 +154,7 @@ export const product2= {
         "circularityText": "When this garment reaches the end of its useful life, it doesn't have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of it safely in your local waste management system. This item will not release any harmful substances into the environment and will emit no greenhouse gases.",
         "complianceItemTitle": "Compliance",
         "complianceText": "Jeans made with 98% cotton and 2% elastane. Compliant with quality and sustainability standards. No harmful chemicals are used in their production.",
-        "letsGetSocial": "Let's Get Social"
+        "letsGetSocial": "Social networks"
       }
     },
     {
@@ -177,7 +177,7 @@ export const product2= {
         "circularityText": "この衣服が耐用年数の終わりに達すると、埋め立て地に行く必要はありません。たくさんの方法があります衣服の寿命を延ばす、または衣服を次のように変えるため新しい何か。地元の廃棄物として安全に廃棄してくださいマネジメントシステム。この商品は有害物質を放出しません環境中に排出され、温室効果を放出しませんガス。",
         "complianceItemTitle": "コンプライアンス",
         "complianceText": "ジーンズは綿 98% とエラスタン 2% で作られています。品質と持続可能性の基準を満たしています。製造には有害な化学物質は使用されていません。",
-        "letsGetSocial": "ソーシャルに参加しましょう"
+        "letsGetSocial": "ソーシャルネットワーク"
       }
     }
   ]
@@ -230,7 +230,7 @@ export const product3= {
         "circularityText": "Cuando esta prenda llega al final de su vida útil, no tiene que ir a un vertedero. Hay muchas maneras para alargar la vida de la prenda o transformarla en algo nuevo. Deseche de forma segura en el sistema de gestión de basura local. Este artículo no liberará ninguna sustancia nociva al medio ambiente y no liberará gases de efecto invernadero.",
         "complianceItemTitle": "Cumplimiento",
         "complianceText": "Chambray orgánico hecho con un 70% de algodón orgánico y un 30% de algodón procedente de fuentes recicladas. Producido a partir de algodón orgánico estadounidense que es cultivado sin productos químicos tóxicos ni OGM (organismos genéticamente modificados). Teñido con pigmentos especiales libres de peligrosos químicos.",
-        "letsGetSocial": "Seamos sociales"
+        "letsGetSocial": "Redes Sociales"
       }
     },
     {
@@ -253,7 +253,7 @@ export const product3= {
         "circularityText": "When this garment reaches the end of its useful life, it doesn't have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of safely in your local waste management system. This item will not release any harmful substances into the environment and will release no greenhouse gases.",
         "complianceItemTitle": "Compliance",
         "complianceText": "Organic chambray made with 70% organic cotton and 30% cotton from recycled sources. Produced from American organic cotton that's grown without toxic chemicals or GMOs (genetically modified organisms). Dyed with special pigments free of hazardous chemicals.",
-        "videoInformation": "Video Information"
+        "letsGetSocial": "Social networks"
       }
     },
     {
@@ -276,7 +276,7 @@ export const product3= {
         "circularityText": "この衣服が寿命の終わりに達すると、埋め立て地に行く必要はありません。衣服の寿命を延ばすための多くの方法があり、新しい何かに変えることもできます。地元の廃棄物管理システムで安全に廃棄してください。この商品は環境に有害な物質を放出せず、温室効果ガスも放出しません。",
         "complianceItemTitle": "規制順守",
         "complianceText": "有機シャンブレーは70%が有機コットン、30%がリサイクルされた原料から作られています。アメリカの有機コットンから生産され、有害な化学物質や遺伝子組み換え作物を使用せずに栽培されます。特別な有害な化学物質を含まない顔料で染色されています。",
-        "videoInformation": "ビデオ情報"
+        "letsGetSocial": "ソーシャルネットワーク"
       }
     }
   ]
@@ -326,7 +326,7 @@ export const product4= {
         "circularityText": "Cuando esta prenda llega al final de su vida útil, no tiene que ir a un vertedero. Hay muchas maneras para alargar la vida de la prenda o transformarla en algo nuevo. Deseche de forma segura en el sistema de gestión de basura local. Este artículo no liberará ninguna sustancia nociva al medio ambiente y no liberará gases de efecto invernadero.",
         "complianceItemTitle": "Cumplimiento",
         "complianceText": "Chambray orgánico hecho con un 70% de algodón orgánico y un 30% de algodón procedente de fuentes recicladas. Producido a partir de algodón orgánico estadounidense que es cultivado sin productos químicos tóxicos ni OGM (organismos genéticamente modificados). Teñido con pigmentos especiales libres de peligrosos químicos.",
-        "letsGetSocial": "Seamos sociales"
+        "letsGetSocial": "Redes sociales"
       }
     },
     {
@@ -349,7 +349,7 @@ export const product4= {
         "circularityText": "When this garment reaches the end of its useful life, it doesn’t have to go to a landfill. There are many ways to extend the life of the garment or transform it into something new. Dispose of safely in your local waste management system. This item will not release any harmful substances into the environment and will release no greenhouse gases.",
         "complianceItemTitle": "Compliance",
         "complianceText": "This athletic clothing is made with 76% polyester, 24% elastane, and 90% nylon, 10% spandex. It meets quality and sustainability standards. No harmful chemicals are used in its production.",
-        "letsGetSocial": "Let's get social"
+        "letsGetSocial": "Social networks"
       }
     },
     {
@@ -372,7 +372,7 @@ export const product4= {
         "circularityText": "この衣服が耐用年数の終わりに達すると、埋め立て地に行く必要はありません。たくさんの方法があります衣服の寿命を延ばす、または衣服を次のように変えるため新しい何か。地元の廃棄物として安全に廃棄してくださいマネジメントシステム。この商品は有害物質を放出しません環境中に排出され、温室効果を放出しませんガス。",
         "complianceItemTitle": "コンプライアンス",
         "complianceText": "このスポーツウェアはポリエステル 76%、エラスタン 24%、ナイロン 90%、スパンデックス 10% で作られています。品質と持続可能性の基準を満たしています。製造には有害な化学物質は使用されていません。",
-        "letsGetSocial": "ソーシャルに参加しましょう"
+        "letsGetSocial": "ソーシャルネットワーク"
       }
     }
   ]
