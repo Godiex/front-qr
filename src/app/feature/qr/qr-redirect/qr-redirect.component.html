@@ -1,4 +1,127 @@
-<div [ngStyle]="baseStyles">
-  <app-company-title [infoRedirect]="infoRedirect"></app-company-title>
-  <app-company-info [infoRedirect]="infoRedirect"></app-company-info>
+<div style="font-family: Montserrat, sans-serif; background-color: #f7f7f7">
+  <div class="header">
+    <nav>
+      <label for="menu-toggle">&#9776;</label>
+      <ul class="menu">
+        <li><a >{{ 'aboutText' | translate }}</a></li>
+        <li><a >{{ 'productText' | translate }}</a></li>
+      </ul>
+      <input type="checkbox" id="menu-toggle" class="menu-button">
+    </nav>
+    <div class="logo"><img src="https://i.ibb.co/mcDzV9g/LOGO-TOGO.jpg" alt="logoText_black" class="small-logo"></div>
+    <div class="left-nav">
+      <div class="search-button">
+      <span class="navbar-brand pointer" >
+      <img class="icon-img" (click)="changeLanguage()" [src]="getCurrentLanguage()" alt="logo">
+    </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="centered-container">
+    <div class="content">
+      <br>
+      <h1>{{ 'titleText' | translate }}</h1>
+      <br>
+      <p id="justify-content">{{ 'text' | translate }}</p>
+      <br>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.ibb.co/sJ2Lwhb/Paso-1-Cultivo-y-Obtenci-n-de-Materia-Prima.jpg" alt="traceability_photo01">
+    </div>
+
+    <div class="card-content">
+      <div class="title-container">
+        <div class="card-title">
+          {{ 'titleStep1.title' | translate }}
+        </div>
+        <div class="card-number">{{ 'one' | translate }}</div>
+      </div>
+      <div class="card-subtitle">{{ 'titleStep1.subTitle' | translate }}</div>
+      <div class="card-description">
+        {{ 'titleStep1.textDescription' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.ibb.co/J7w76G7/Paso-2-Tejido-del-Material-de-la-Camisa.jpg" alt="traceability_photo01">
+    </div>
+
+    <div class="card-content">
+      <div class="title-container">
+        <div class="card-title">
+          {{ 'titleStep2.title' | translate }}
+        </div>
+        <div class="card-number">{{ 'two' | translate }}</div>
+      </div>
+      <div class="card-subtitle">{{ 'titleStep2.subTitle' | translate }}</div>
+      <div class="card-description">
+        {{ 'titleStep2.textDescription' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.ibb.co/YpKGw46/Paso-3-Corte-y-Confecci-n-de-la-Camisa.jpg" alt="traceability_photo01">
+    </div>
+
+    <div class="card-content">
+      <div class="title-container">
+        <div class="card-title">
+          {{ 'titleStep3.title' | translate }}
+        </div>
+        <div class="card-number">{{ 'three' | translate }}</div>
+      </div>
+      <div class="card-subtitle">{{ 'titleStep3.subTitle' | translate }}</div>
+      <div class="card-description">
+        {{ 'titleStep3.textDescription' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.ibb.co/rwXZMzj/Paso-4-Etiquetado-y-Empaquetado.jpg" alt="traceability_photo01">
+    </div>
+
+    <div class="card-content">
+      <div class="title-container">
+        <div class="card-title">
+          {{ 'titleStep4.title' | translate }}
+        </div>
+        <div class="card-number">{{ 'four' | translate }}</div>
+      </div>
+      <div class="card-subtitle">{{ 'titleStep4.subTitle' | translate }}</div>
+      <div class="card-description">
+        {{ 'titleStep4.textDescription' | translate }}
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img">
+      <img src="https://i.ibb.co/CBRxhRB/Paso-5-Distribuci-n-y-Venta.jpg" alt="traceability_photo01">
+    </div>
+
+    <div class="card-content">
+      <div class="title-container">
+        <div class="card-title">
+          {{ 'titleStep5.title' | translate }}
+        </div>
+        <div class="card-number">{{ 'five' | translate }}</div>
+      </div>
+      <div class="card-subtitle">{{ 'titleStep5.subTitle' | translate }}</div>
+      <div class="card-description">
+        {{ 'titleStep5.textDescription' | translate }}
+      </div>
+    </div>
+  </div>
+
 </div>
+

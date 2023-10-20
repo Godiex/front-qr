@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {QrRedirectComponent} from "./qr-redirect/qr-redirect.component";
 
 const routes: Routes = [
-  { path: 'redirect', component: QrRedirectComponent }
+  { path: '', component: QrRedirectComponent }
 ];
 
 @NgModule({
