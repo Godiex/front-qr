@@ -30,6 +30,20 @@
   white-space: pre-line;
 }
 
+i {
+  color: #ffffff;
+}
+
+.btn-primary {
+  background-color: #07446d !important;
+}
+
+.btn-xs {
+  padding: 0.25rem 0.5rem; /* Ajusta el relleno según tus preferencias */
+  font-size: 0.75rem; /* Ajusta el tamaño de fuente según tus preferencias */
+  line-height: 1; /* Opcional: Ajusta la altura de línea según tus preferencias */
+}
+
 .customer-header{
   color: #747474;
   font-size: large;

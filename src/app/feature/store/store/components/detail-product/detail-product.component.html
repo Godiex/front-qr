@@ -1,7 +1,7 @@
 <article>
     <div class="test">
         <div class="image-container">
-            <mdb-carousel [dark]="true" [indicators]="false" [animation]="'fade'">
+            <mdb-carousel [dark]="true" [indicators]="false" [animation]="'fade'"  *ngIf="photos.length > 1;">
                 <mdb-carousel-item *ngFor="let image of photos">
                     <div class="dropdown ">
                         <img src="assets/compartir.png" alt="share" class="shareIcon" (click)="toggleDropdown()">
@@ -24,9 +24,9 @@
                         </ul>
                     </div>
                     <img [src]=image class="d-block w-100" alt="First slide" />
-
                 </mdb-carousel-item>
             </mdb-carousel>
+            <img [src]="photos[0]" alt="jacket" *ngIf="photos.length === 1;">
         </div>
     </div>
     <section>

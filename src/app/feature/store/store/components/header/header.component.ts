@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() logoUrl: string;
-  @Output() eventChangeLanguaje: EventEmitter<string> = new EventEmitter();
+  @Output() eventChangeLanguage: EventEmitter<string> = new EventEmitter();
 
   currentLanguage: number = 0;
 
@@ -24,12 +24,6 @@ export class HeaderComponent {
     code: 'ja',
     image: 'assets/japon.png'
   }];
-
-
-  ngOnInit(): void {
-
-  }
-
   constructor() {
     this.logoUrl = "";
   }
@@ -44,6 +38,6 @@ export class HeaderComponent {
     } else {
       this.currentLanguage++;
     }
-    this.eventChangeLanguaje.emit(this.flags[this.currentLanguage].code);
+    this.eventChangeLanguage.emit(this.flags[this.currentLanguage].code);
   }
 }

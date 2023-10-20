@@ -14,6 +14,9 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { AccordionModule } from 'primeng/accordion';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { NgApexchartsModule } from "ng-apexcharts";
+import { PdfViewerComponent } from './store/components/pdf-viewer/pdf-viewer.component';
+import { ModalComponent } from './store/components/modal/modal.component';
+import {PdfViewerModule} from "ng2-pdf-viewer";
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { NgApexchartsModule } from "ng-apexcharts";
     DetailProductComponent,
     RecommendationsComponent,
     InformationProductComponent,
-    HeaderComponent
+    HeaderComponent,
+    PdfViewerComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +37,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
     MdbCollapseModule,
     AccordionModule,
     GoogleMapsModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    PdfViewerModule
   ]
 })
 export class StoreModule { }

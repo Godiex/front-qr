@@ -378,4 +378,62 @@ export const product4= {
   ]
 }
 
-export const reponseJson = [product1, product2, product3, product4]
+export const product10= {
+  "id": 10,
+  "logoUrl": "https://i.ibb.co/Wg0xJPD/Logo-ATLAS.jpg",
+  "position": { lat: 10.986923160692335, lng: -74.80455866554756 },
+  "photos": [
+    "https://i.ibb.co/DQzcHVk/image1.jpg"
+  ],
+  "productsMayAlsoLike": [],
+  "customContent": [
+    {
+      "languageCode": "es",
+      "content": {
+        "productTitle": "",
+        "authenticText": "",
+        "productDetailsItemTitle": "Informacion",
+        "youMayAlsoLikeTitle": "Productos que quizás buscas",
+        "productDetails": "<strong> Nombre completo: </strong> Carlos Andrés Pedraza López\n<strong> Identificación: </strong>1.234.685.792",
+        "materialsItemTitle": "",
+        "materials": "",
+        "careTextTitle": "Arl - Eps",
+        "careText": 'CUSTOM-CONTENTS-PDF',
+        "whereImFromItemTitle": "Lugar asignado",
+        "whereImFromText": "<strong> Conjunto las Delicias </strong>",
+        "environmentImpactItemTitle": "",
+        "environmentImpactText": "Salud total",
+        "circularityItemTitle": "Informacion dotacion",
+        "circularityText": "<strong> Última dotación entregada :</strong> 04/10/2023\n<strong> Dotaciones entregadas en el año:</strong> 2",
+        "complianceItemTitle": "Calificación",
+        "complianceText": "<div > <strong> Calificacion :</strong> <span style='font-size: 28px; color: gold;'>&#9733;</span><span style='font-size: 28px; color: gold;'>&#9733;</span><span style='font-size: 28px; color: gold;'>&#9733;</span><span style='font-size: 28px; color: gold;'>&#9733;</span> </div> <strong> Observacion: </strong>Tiene capacidad para solucionar inconvenientes bajo presión.",
+        "letsGetSocial": "Redes sociales"
+      }
+    },
+    {
+      "languageCode": "en",
+      "content": {
+        "productTitle": "",
+        "authenticText": "",
+        "productDetailsItemTitle": "Information",
+        "youMayAlsoLikeTitle": "Products You May Be Interested In",
+        "productDetails": "Full Name: Carlos Andrés Pedraza López\nIdentification: 1,234,685,792",
+        "materialsItemTitle": "",
+        "materials": "",
+        "careTextTitle": "Arl - Eps",
+        "careText": 'CUSTOM-CONTENTS-PDF',
+        "whereImFromItemTitle": "Assigned Location",
+        "whereImFromText": "Las Delicias Community",
+        "environmentImpactItemTitle": "",
+        "environmentImpactText": "Health Total",
+        "circularityItemTitle": "Uniform Information",
+        "circularityText": "Last uniform issued: 10/04/2023\nUniforms issued this year: 2",
+        "complianceItemTitle": "Rating",
+        "complianceText": "Rating: ★ ★ ★ ★ ★ (5)\nNote: Capable of resolving issues under pressure.",
+        "letsGetSocial": "Social Media"
+      }
+    }
+  ]
+}
+
+export const reponseJson = [product1, product2, product3, product4, product10]

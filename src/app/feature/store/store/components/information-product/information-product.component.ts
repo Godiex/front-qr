@@ -1,4 +1,5 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {Component, Input, OnChanges, SimpleChanges, ViewChild} from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import {
   ApexAxisChartSeries,
   ApexChart,
@@ -7,6 +8,8 @@ import {
   ApexXAxis,
   ApexPlotOptions
 } from "ng-apexcharts";
+import {PdfViewerComponent} from "../pdf-viewer/pdf-viewer.component";
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries;
@@ -22,7 +25,10 @@ export type ChartOptions = {
   styleUrls: ['./information-product.component.scss']
 })
 export class InformationProductComponent implements OnChanges{
+  modalButtonHtml: SafeHtml;
+  sanitizerSafe: DomSanitizer;
   @Input() position = { lat: 35.682839, lng: 139.759455  };
+  modalRef: MdbModalRef<PdfViewerComponent> | null = null;
   marker = {
     position: this.position,
   }
@@ -98,7 +104,19 @@ export class InformationProductComponent implements OnChanges{
   "stylers": [
     { "color": "#000000" }
   ]
-  constructor(){ }
+
+  openModal() {
+    this.modalRef = this.modalService.open(PdfViewerComponent, {
+      modalClass: 'modal-xl',
+    });
+  }
+
+  constructor(private modalService: MdbModalService, private sanitizer: DomSanitizer) {
+    this.modalButtonHtml = this.sanitizer.bypassSecurityTrustHtml(
+      `<a class="btn btn-primary" (click)="openModal()">Open modal</a>`
+    );
+    this.sanitizerSafe = sanitizer;
+  }
 
   ngOnChanges(changes: SimpleChanges) {
     // Detecta cambios en la propiedad 'position'

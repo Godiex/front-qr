@@ -1,44 +1,46 @@
 <div class="container-accordion">
   <div class="card flex justify-content-center">
     <p-accordion class="w-full">
-      <p-accordionTab>
+      <p-accordionTab *ngIf="('productDetailsItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header">{{ 'productDetailsItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'productDetails' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="('productDetails' | translate)"> </p>
         </ng-template>
       </p-accordionTab>
-      <p-accordionTab>
+      <p-accordionTab *ngIf="('materialsItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header">{{ 'materialsItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'materials' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="('materials' | translate)"> </p>
         </ng-template>
-      </p-accordionTab>
-      <p-accordionTab>
+      </p-accordionTab >
+      <p-accordionTab *ngIf="('careTextTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header"> {{ 'careTextTitle' | translate }}</p>
         </ng-template>
-        <ng-template pTemplate="content">
-          <p class="m-0">
+        <ng-template pTemplate="content" *ngIf="('careText' | translate).toString() == 'CUSTOM-CONTENTS-PDF'">
+          <strong> Arl:</strong> Sura
+          <button class="btn btn-xs btn-primary text-whites" (click)="openModal()" style="vertical-align: middle;">
+            <i class="fas fa-eye"></i>
+          </button>
+          <br>
+          <strong>EPS:</strong> Salud Total
+        </ng-template>
+        <ng-template pTemplate="content" *ngIf="('careText' | translate).toString() !== 'CUSTOM-CONTENTS-PDF'">
+          <p class="m-0" [innerHTML]="('careText' | translate)">
             {{ 'careText' | translate }}
           </p>
         </ng-template>
-      </p-accordionTab>
-      <p-accordionTab>
+      </p-accordionTab >
+      <p-accordionTab *ngIf="('whereImFromItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header"> {{ 'whereImFromItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'whereImFromText' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="('whereImFromText' | translate)"> </p>
           <div>
             <google-map height="500px" width="100%" [options]="options"  [style]="stylers">
               <map-marker [position]="marker.position"></map-marker>
@@ -47,14 +49,12 @@
 
         </ng-template>
       </p-accordionTab>
-      <p-accordionTab>
+      <p-accordionTab *ngIf="('environmentImpactItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header">{{ 'environmentImpactItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'environmentImpactText' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="('environmentImpactText' | translate)"> </p>
           <div>
             <apx-chart [series]="chartOptions.series!" [chart]="chartOptions.chart!"
               [dataLabels]="chartOptions.dataLabels!" [plotOptions]="chartOptions.plotOptions!"
@@ -62,24 +62,20 @@
           </div>
         </ng-template>
       </p-accordionTab>
-      <p-accordionTab>
+      <p-accordionTab *ngIf="('circularityItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header">{{ 'circularityItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'circularityText' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="('circularityText' | translate)"> </p>
         </ng-template>
       </p-accordionTab>
-      <p-accordionTab>
+      <p-accordionTab *ngIf="('complianceItemTitle' | translate).length > 0;">
         <ng-template pTemplate="header">
           <p class="customer-header">{{ 'complianceItemTitle' | translate }}</p>
         </ng-template>
         <ng-template pTemplate="content">
-          <p class="m-0">
-            {{ 'complianceText' | translate }}
-          </p>
+          <p class="m-0" [innerHTML]="sanitizerSafe.bypassSecurityTrustHtml(('complianceText' | translate))"> </p>
         </ng-template>
       </p-accordionTab>
     </p-accordion>

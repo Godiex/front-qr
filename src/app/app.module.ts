@@ -21,13 +21,15 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    PdfViewerModule,
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
@@ -54,3 +56,4 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+platformBrowserDynamic().bootstrapModule(AppModule);
